@@ -9,8 +9,6 @@ I both designed and developed this site using Figma, Visual Studio Code, Github,
 First, run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 
