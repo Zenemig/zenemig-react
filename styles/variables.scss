@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:400,700|Unica+One&display=swap');
+
+// Fonts
+$font-handwritten: 'Dancing Script', cursive;
+$font-title: 'Roboto Condensed', sans-serif;
+$font-body: 'Roboto', sans-serif;
+$font-display: 'Unica One', cursive;
+
+// Colors
+$main-color: #C8AD55;
+$complementary-dark-color: #6C5A49;
+$complementary-light-color: #D0FCB3;
+$background-color: #271F30;
+$text-color: #9BC59D;
+
+// Spacing
+$space-smallest: 5px;
+$space-small: 10px;
+$space-regular: 15px;
+$space-big: 30px;
+$space-biggest: 60px;
+
+// Common Breakpoints
+$sm: 480px;
+$md: 768px;
+$lg: 960px;
+$xl: 1280px;
+
+// Manage breakpoints (Mobile First)
+@mixin media($media-query) {
+
+  @if $media-query ==xs {
+    @media screen and (min-width: $xs) {
+      @content;
+    }
+  }
+
+  @if $media-query ==sm {
+    @media screen and (min-width: $sm) {
+      @content;
+    }
+  }
+
+  @else if $media-query ==md {
+    @media screen and (min-width: $md) {
+      @content;
+    }
+  }
+
+  @else if $media-query ==lg {
+    @media screen and (min-width: $lg) {
+      @content;
+    }
+  }
+
+  @else if $media-query ==xl {
+    @media screen and (min-width: $xl) {
+      @content;
+    }
+  }
+
+  @else {
+    @media screen and (min-width: $media-query) {
+      @content;
+    }
+  }
+}

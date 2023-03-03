@@ -1,1 +1,18 @@
+@import 'variables';
 
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $background-color;
+  display: grid;
+  grid-template-columns: 320px 1fr 320px;
+}
+
+.leftSidebar {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  padding: $space-big $space-regular;
+  position: relative;
+  text-align: center;
+}

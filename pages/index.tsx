@@ -1,16 +1,20 @@
-import Image from 'next/image'
+import LeftSidebar from '../components/leftSidebar'
 
-import styles from '../styles/layout.module.scss'
-
-import logoZenemig from '../public/logo_zenemig.svg'
+import layout from '../styles/layout.module.scss'
 
 const Home = () => {
   return (
-    <Image
-      alt="Zenemig Logo"
-      priority
-      src={logoZenemig}
-    />
+    <div className={layout.container}>
+      <LeftSidebar />
+
+      <main className={layout.content}>
+        <p>Content</p>
+      </main>
+
+      <aside className={layout.rightSidebar}>
+        <p>Instagram</p>
+      </aside>
+    </div>
   )
 }
 
