@@ -1,0 +1,12 @@
+@import 'variables';
+
+.headline {
+  margin: 0 0 $space-big 0;
+  h1 {
+    font-family: $font-display;
+  }
+  p {
+    display: block;
+    font-size: 16px;
+  }
+}

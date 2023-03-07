@@ -5,14 +5,18 @@
   min-height: 100vh;
   background-color: $background-color;
   display: grid;
-  grid-template-columns: 320px 1fr 320px;
+  grid-template-columns: 320px 1fr;
 }
 
-.leftSidebar {
+.sidebar {
   align-items: center;
   display: flex;
   flex-flow: column;
   padding: $space-big $space-regular;
   position: relative;
   text-align: center;
+}
+
+.content {
+  padding: $space-big $space-regular;
 }

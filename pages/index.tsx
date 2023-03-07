@@ -1,19 +1,18 @@
-import LeftSidebar from '../components/leftSidebar'
+import Sidebar from '../components/sidebar'
+import Header from '../components/header'
 
 import layout from '../styles/layout.module.scss'
 
 const Home = () => {
   return (
     <div className={layout.container}>
-      <LeftSidebar />
+      <Sidebar />
 
       <main className={layout.content}>
-        <p>Content</p>
-      </main>
+        <Header />
 
-      <aside className={layout.rightSidebar}>
-        <p>Instagram</p>
-      </aside>
+        <h2>Work</h2>
+      </main>
     </div>
   )
 }
